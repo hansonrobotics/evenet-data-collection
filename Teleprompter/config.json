@@ -1,0 +1,6 @@
+{
+    "LiveIP":"192.168.1.17",
+    "LivePORT":8667,
+    "collector_server_ip":"localhost",
+    "collector_server_port":9900,
+}
