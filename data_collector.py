@@ -2,13 +2,17 @@ import os
 import webbrowser
 os.chdir(os.path.abspath("Teleprompter"))
 import threading
-
+import sys
 print(os.getcwd())
 
 
 def start_local_server():
+	version = sys.version
+	if (version.startswith("3")):
+		os.system("python3 -m http.server")
+	elif (version.startswith("2")):
+		os.system("python -m SimpleHTTPServer")
 	print("Python local server has started...\n")
-	os.system("python -m SimpleHTTPServer")
 def start_python_server():
 	print("Python data collector server has started...\n")
 	os.system("python collector.py")
@@ -24,5 +28,5 @@ def open_chrome():
 
 threading.Thread(target=start_local_server).start()
 threading.Thread(target=start_python_server).start()
-open_chrome()
+# open_chrome()
 
