@@ -18,7 +18,7 @@ Before running the data-collector scripts one should configure for required opti
 *   LiveIP                  : IP address of Faceware live server
 *   LivePORT                : Port number of Faceware live server,
 *   collector_server_ip     : IP address of collector server,
-*   collector_server_port	: IP address of collector client
+*   collector_server_port	: IP address of collector client  
 The following diagram depicts the interaction between the scripts, live server and web app.
 <img src="https://github.com/hansonrobotics/evenet-data-collection/blob/master/images/image8.png" width = 50%/> 
 #### Configuring Faceware live server streaming.
@@ -31,7 +31,7 @@ and "Streaming!" message appears on bottom left corner of the window.
 Values of the animation shape keys can be view using "Animation Tuning" menu of menubar.
 <img src="https://github.com/hansonrobotics/evenet-data-collection/blob/master/images/image5.PNG" width = 50%/>  
 <img src="https://github.com/hansonrobotics/evenet-data-collection/blob/master/images/image3.png" width = 50%/>
-Faceware analyzer provides functionalities to track landmark position inside videos from file and from webcams. There are two options to track faces inside videos. The first is auto track and uses faceware default models to track face. The second options is to train tracking models for each subject. The following images show two frames selected to train models for [video from youtube](https://www.youtube.com/watch?v=S4roaqfyU2A) 
+Faceware analyzer provides functionalities to track landmark position inside videos from file and from webcams. There are two options to track faces inside videos. The first is auto track and uses faceware default models to track face. The second options is to train tracking models for each subject. The following images show two frames selected to train models for this video from youtube(https://www.youtube.com/watch?v=S4roaqfyU2A). 
 <img src="https://github.com/hansonrobotics/evenet-data-collection/blob/master/images/image6.PNG" width = 50%/>
 <img src="https://github.com/hansonrobotics/evenet-data-collection/blob/master/images/image7.PNG" width = 50%/>
 ### Adding your own custom emotion script to the Teleprompter
