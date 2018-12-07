@@ -1,0 +1,67 @@
+<div class="main">
+  <h2  style="color: green">{{keybord}}</h2>
+  <!-- <h2 *ngIf="is_con" style="color: green">SERVER: {{is_server_connected}}</h2> -->
+  <div class="prompter text-center">
+
+       <img [src]="emoji" width="100px" height="100px" />
+       <h2 [ngStyle]="{'font-size': font}" style="color: rgb(145, 140, 140)">[{{current_emotion}}]</h2>
+       <h2 [ngStyle]="{'font-size': font}">{{curent_script}}</h2>
+       
+          
+       
+
+  </div>
+  <div class="fixed-bottom timer row" style="padding-left: 2%;">
+  	   <div class="col-sm-5" style="padding:1%; ">
+  	   		<div style="float: left;">
+            <div *ngIf="is_shown" style=" width: 100%;float: left;">
+               <form>
+                <div class="form-group">
+                 
+                  <input [(ngModel)]="clip" name ="clip" style="background-color: white" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="192.168.1.27:8000" autofocus>
+                  <small *ngIf="!clip" style="color: red;" id="emailHelp" class="form-text text-muted">Please server address</small>
+                </div>
+              </form>
+          </div>
+  	   			
+  	   		</div>
+  	   		<div style="margin-left: 54%;">
+            
+  	   			<p style="font-weight: bold;">Press [S] to start recording</p>
+            <p style="font-weight: bold;">Press [D] to discard the current recording</p>
+  	   		  <p style="font-weight: bold;">[Right Arrow] to save current recording and go to the next</p>
+            <p style="font-weight: bold;">[SPACE] to enter server address</p>
+            <p style="font-weight: bold;">[ENTER] to save server address</p>
+            <p >Press [T] to start the timer</p>
+            <p>Press [Y] to stop the timer</p>
+              <!--  <p>Press [R] to reset the logger</p> -->
+  	   		</div>
+          
+  	   		
+
+  	   </div>
+  	   <div class="col-sm-3" style="padding-top: 2%;">
+  	   		<h1 class="text-center" style="font-size: 5rem;color: rgb(145, 140, 140)">{{hr}}:{{min}}:{{sec}}</h1>
+  	   		
+  	   </div>
+  	   <div class="col-sm-4" style="padding-top: 2%;">
+  	   		
+  	   		<div style="float: left;">
+  	   			<p>[RIGHT ARROW] to move forward</p>
+  	   			<p>[LEFT ARROW] to move backward</p>
+  	   			<p>[UP/Down ARROW] to change the font</p>
+  	   		
+  	   		</div >
+  	   		<div style="margin-left: 50%;padding-right: 10%;">
+  	   			<a (click)="download()" *ngIf="loger.length"  style="color: white; float: right;color: red;
+  font-family: helvetica;
+  text-decoration: none;
+  text-transform: uppercase;"  class="" title="Download JSON" [href]="downloadJsonHref" download="download.json">Download</a>
+  	   		</div>
+  	   		
+  	   </div>
+
+  		
+        
+  </div>
+</div>
