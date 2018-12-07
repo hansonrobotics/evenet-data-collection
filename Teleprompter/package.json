@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start-server":"python2 collector.py --config=config.json",
+    "start": "concurrently \"ng serve\"  \"npm run start-server\"",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -22,6 +23,7 @@
     "@angular/router": "^6.0.3",
     "@types/socket.io-client": "^1.4.32",
     "bootstrap": "^4.1.2",
+    "concurrently": "^4.1.0",
     "core-js": "^2.5.4",
     "jquery": "^3.3.1",
     "rxjs": "^6.0.0",
