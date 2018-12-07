@@ -79,19 +79,19 @@ It is scraped from twitter using twitter developer [API](https://developer.twitt
 ## Preprocessing of text_emotion.csv for teleprompter
 - Some characters and numbers are replace by thier corresponding text word
 
-'@' is replace by "At"
+   '@' is replace by "At"
 
-'=' is replaceb y "equals"
+   '=' is replaceb y "equals"
 
-'+' is replace by "plus"
+   '+' is replace by "plus"
 
-'$' is replaced by "dollar"
+   '$' is replaced by "dollar"
 
-'*' is replaced by "star"
+   '*' is replaced by "star"
 
-'&' is replaced by "and"
+   '&' is replaced by "and"
 
-'#' is replaced by "Hashtag"
+   '#' is replaced by "Hashtag"
 
 And  numbers replaced by thier coresponding word
 
