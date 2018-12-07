@@ -1,13 +1,13 @@
 # Scripts for data collection with faceware live-server
+For compiled binary files and scripts please visit the [release page](https://github.com/hansonrobotics/evenet-data-collection/releases)
 
-This repository contains scripts for evenet dataset collection. 
 ## Getting Started
 The rep contains the following scripts.
 1. Teleprompter server - This script provides server for web based teleprompter 
 2. Faceware live server client - A client which subscribes for live server blendkeys
 3. Interface server - A server which listens from teleprompter and communicates with the client
 to save transcriptions from teleprompter and blendkeys from client.  
-For compiled binary files and scripts please visit the [release page](https://github.com/hansonrobotics/evenet-data-collection/releases)
+
 ### Prerequisites
 
 * python 2
