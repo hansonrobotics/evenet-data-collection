@@ -102,7 +102,7 @@ Sample preprocessing
 "@jhon_1234" is replaced by  "At jhon underscore one two three four"
 
 ## License of dataset(twitter tweets)
-- Twitter agreement and [Policy](https://developer.twitter.com/en/developer-terms/agreement-and-policy.html)
+- [Twitter agreement and Policy](https://developer.twitter.com/en/developer-terms/agreement-and-policy.html)
 
 ### Screenshot's of Teleprompter demo
 
