@@ -69,6 +69,45 @@ Press UP/DOWN ARROW to change the scripts font size on the teleprompter
 
 The collected dataset will be saved inside `Teleprompter/data` folder.
 
+
+### Dataset(Script) used for Teleprompter
+The script text_emotion.csv is orinally taken from text emotion classification project https://github.com/tlkh/text-emotion-classification/tree/master/dataset
+
+This dataset is twitter users tweet, expressing their feeling on different circumstance.
+It is scraped from twitter using twitter developer [API](https://developer.twitter.com/en.html)
+
+## Preprocessing of text_emotion.csv for teleprompter
+- Some characters and numbers are replace by thier corresponding text word
+
+'@' is replace by "At"
+
+'=' is replaceb y "equals"
+
+'+' is replace by "plus"
+
+'$' is replaced by "dollar"
+
+'*' is replaced by "star"
+
+'&' is replaced by "and"
+
+'#' is replaced by "Hashtag"
+
+And  numbers replaced by thier coresponding word
+
+eg. 0 ---> zero, 1 --> one,.....etc 
+
+Sample preprocessing
+
+"@jhon_1234" is replaced by  "At jhon underscore one two three four"
+
+## License of dataset(twitter tweets)
+- Based on Twitter agreement and [Policy](https://developer.twitter.com/en/developer-terms/agreement-and-policy.html)
+
+Use the Twitter API to integrate Twitter Content into your Services or conduct analysis of such Twitter Content
+
+Copy a reasonable amount of and display the Twitter Content on and through your Services to End Users
+
 ### Screenshot's of Teleprompter demo
 
 ## Surprise emotion
