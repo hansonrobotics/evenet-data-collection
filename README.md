@@ -175,7 +175,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-``` cd Teleprompter ```
+- First open faceware 
+
+- Then
+
+       ``` cd Teleprompter ```
+
+       ``` npm install ```
+       
+       ``` npm start ```
+ 
+ The ``` npm start ``` command concurrently runs the angular code and ``` collector.py ``` python script. The python script is a server that save the data and  communicates with angular while collecting the dataset.
+
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
