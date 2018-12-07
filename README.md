@@ -129,9 +129,8 @@ Sample preprocessing
 
 go to ```app.component.ts``` file
 
-find ```replace_char(char)``` function and add the caracter you want to add 
-
-    ```
+find ```replace_char(char)``` function and add the caracter you want to add   
+```
     
     replace_char(c){
             var value = "";
@@ -150,7 +149,7 @@ find ```replace_char(char)``` function and add the caracter you want to add
        }
        
        
-    ```
+```  
 - To do your own preprocessing 
 
 Go to ``` do_other_preprocessing(text)```  function, this function accepts the script text and you can do your own preprocessing inside this function
@@ -177,13 +176,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 - First open faceware 
 
-- Then
+- Then   
 
-       ``` cd Teleprompter ```
+```
+	cd Teleprompter 
 
-       ``` npm install ```
-       
-       ``` npm start ```
+	npm install 
+
+	npm start
+```
  
  The ``` npm start ``` command concurrently runs the angular code and ``` collector.py ``` python script. The python script is a server that save the data and  communicates with angular while collecting the dataset.
 
