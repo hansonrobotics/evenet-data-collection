@@ -34,6 +34,7 @@ Values of the animation shape keys can be view using "Animation Tuning" menu of 
 Faceware analyzer provides functionalities to track landmark position inside videos from file and from webcams. There are two options to track faces inside videos. The first is auto track and uses faceware default models to track face. The second options is to train tracking models for each subject. The following images show two frames selected to train models for this video from youtube(https://www.youtube.com/watch?v=S4roaqfyU2A). 
 <img src="https://github.com/hansonrobotics/evenet-data-collection/blob/master/images/image6.PNG" width = 50%/>
 <img src="https://github.com/hansonrobotics/evenet-data-collection/blob/master/images/image7.PNG" width = 50%/>
+
 ### Adding your own custom emotion script to the Teleprompter
 Prepare the data with the following csv format 
 ![image 6](images/sample.png)  
@@ -67,3 +68,17 @@ Press RIGHT ARROW to save the current recording and go to the next script
 Press UP/DOWN ARROW to change the scripts font size on the teleprompter
 
 The collected dataset will be saved inside `Teleprompter/data` folder.
+
+### Screenshot's of Teleprompter demo
+
+## Surprise emotion
+![image 8](images/surprise.png)
+
+## Happy emotion
+![image 8](images/happy.png)
+
+## Angry emotion
+![image 8](images/angry.png)
+
+## Sad emotion
+![image 8](images/sad.png)
