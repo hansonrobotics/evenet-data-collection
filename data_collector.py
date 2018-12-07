@@ -1,6 +1,6 @@
 import os
 import webbrowser
-os.chdir(os.path.abspath("Teleprompter"))
+
 import threading
 import sys
 print(os.getcwd())
@@ -8,6 +8,7 @@ print(os.getcwd())
 
 def start_local_server():
 	version = sys.version
+	os.chdir(os.path.abspath("Teleprompter"))
 	if (version.startswith("3")):
 		os.system("python3 -m http.server")
 	elif (version.startswith("2")):
